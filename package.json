@@ -1,0 +1,36 @@
+{
+    "name": "zsemle-counter",
+    "version": "1.0.0",
+    "description": "A little countdown",
+    "main": "app.js",
+    "scripts": {
+        "clean": "forfiles /P dist /M * /C \"cmd /c if @isdir==FALSE del @file\"",
+        "start": "parcel src/index.html",
+        "build-prod": "parcel build src/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MrZsemle/zsemle-counter.git"
+    },
+    "author": "MrZsemle",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MrZsemle/zsemle-counter/issues"
+    },
+    "homepage": "https://github.com/MrZsemle/zsemle-counter#readme",
+    "dependencies": {
+        "typeface-roboto": "0.0.75"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.12.0",
+        "bootstrap": "^4.4.1",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jquery": "^3.4.1",
+        "parcel-bundler": "^1.12.4",
+        "popper.js": "^1.16.0",
+        "prettier": "^1.19.1",
+        "sass": "^1.24.0"
+    }
+}
