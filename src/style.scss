@@ -27,9 +27,9 @@ body {
 
 .snow {
     width: 100%;
-    max-width: 320px;
+    max-width: 432px;
     height: 100%;
-    max-height: 230px;
+    max-height: 307.62px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -38,8 +38,30 @@ body {
     background-repeat: no-repeat;
 }
 
+@include media-breakpoint-down(sm) {
+    .snow {
+        max-width: 261.21px;
+        max-height: 186px;
+    }
+}
+
+.snow-zsemle-logo {
+    width: 28px;
+    height: 39px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 10%;
+    bottom: 10%;
+    background-image: url(./images/logo/logo.svg);
+}
+
 .emoji {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     margin: 0 10px;
+}
+
+.counter-row {
+    padding: 100px 0;
 }
