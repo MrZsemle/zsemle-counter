@@ -12,10 +12,34 @@ body {
     color: #ffffff;
 }
 
+.numbDetails {
+    opacity: 0.3;
+    text-align: center;
+}
+
 #app {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: radial-gradient(50% 50% at 50% 50%, #ff9560 0%, #ff6651 100%);
+}
+
+.snow {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 230px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("./images/snow.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.emoji {
+    width: 2em;
+    height: 2em;
+    margin: 0 10px;
 }
