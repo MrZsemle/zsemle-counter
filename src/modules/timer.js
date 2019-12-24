@@ -1,6 +1,6 @@
 export default argDate => {
     const date = Date.parse(argDate);
-    const app = document.querySelector(".row");
+    const app = document.querySelector(".container");
 
     //countdown
     const countdown = setInterval(() => {
@@ -18,7 +18,7 @@ export default argDate => {
         ).toLocaleString(undefined, { minimumIntegerDigits: 2 });
 
         //Edit HTML
-        app.innerHTML = `<div class="col numb"><span>${hours}</span></div><div class="col numb"><span>${minutes}</span></div><div class="col numb"><span>${seconds}</span></div>`;
+        app.innerHTML = `<div class="row align-items-stretch flex-fill justify-content-center display-1"><div class="col-auto pr-4 pr-md-5 numb"><span>${hours}</span></div><div class="col-auto pr-3 pr-md-5 pl-3 pl-md-5 numb"><span>${minutes}</span></div><div class="col-auto pl-4 pl-md-5 numb"><span>${seconds}</span></div></div>`;
 
         //Verify
         if (0 > distance) {

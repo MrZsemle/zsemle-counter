@@ -1,6 +1,21 @@
-//@import "../node_modules/bootstrap/scss/bootstrap";
+$enable-responsive-font-sizes: true;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+    height: 100%;
+}
 
 .numb {
     text-align: center;
-    font-size: 144pt;
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #ff9560 0%, #ff6651 100%);
 }
