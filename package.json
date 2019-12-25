@@ -5,6 +5,7 @@
     "main": "app.js",
     "scripts": {
         "clean": "forfiles /P dist /M * /C \"cmd /c if @isdir==FALSE del @file\"",
+        "clean-cache": "rmdir .cache",
         "start": "parcel src/index.html",
         "build-prod": "parcel build src/index.html"
     },
