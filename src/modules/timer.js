@@ -41,7 +41,7 @@ export default argDate => {
         //Verify
         if (0 > distance) {
             clearInterval(countdown);
-            app.innerHTML = `<div class="col display-4 text-white text-center">Happy New Year!</div>`;
+            app.innerHTML = `<div class="col display-4 numb">uwu</div>`;
         }
     }, 1000);
 };

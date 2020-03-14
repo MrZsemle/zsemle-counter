@@ -6,7 +6,7 @@ import twemoji from "twemoji";
 import "./style.scss";
 import timer from "./modules/timer";
 
-timer("Jan-01-2020 00:00");
+timer("Jun-15-2020 00:00");
 
 twemoji.parse(document.querySelector(".emojis"), {
     folder: "svg",
