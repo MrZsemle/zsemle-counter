@@ -5,8 +5,11 @@ import "typeface-roboto";
 import twemoji from "twemoji";
 import "./style.scss";
 import timer from "./modules/timer";
+import * as config from "./config.json";
 
-timer("Dec-24-2020 18:00");
+timer(config.date);
+
+document.querySelector(".emojis").innerHTML = config.emojis.join(" ");
 
 twemoji.parse(document.querySelector(".emojis"), {
     folder: "svg",
