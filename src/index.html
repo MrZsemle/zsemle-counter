@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>zsemle-counter</title>
-        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <!-- <link rel="shortcut icon" href="assets/img/favicon.ico">
         <meta name="twitter:description" content="A little countdown">
         <meta property="og:description" content="A little countdown">
         <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32.png">
         <link rel="icon" type="image/png" sizes="180x180" href="assets/img/180.png">
         <link rel="icon" type="image/png" sizes="192x192" href="assets/img/192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512.png"> -->
     </head>
     <body>
         <div id="app">
@@ -26,11 +26,28 @@
                 <div
                     class="row justify-content-center align-items-center emojis"
                 >
-                    🦠 👐 💦
+                    🎉 ⛄ ❄️
                 </div>
                 <div
                     class="row counter-row align-items-stretch flex-fill justify-content-center"
-                ></div>
+                >
+                <div class="col-auto pr-2 pr-md-3 numb">
+                    <span class="display-1 font-weight-normal day"></span>
+                    <p class="numbDetails">Days</p>
+                    </div>
+                    <div class="col-auto pr-3 pr-md-4 pl-4 pl-md-5 numb">
+                    <span class="display-1 hour"></span>
+                    <p class="numbDetails">Hours</p>
+                    </div>
+                    <div class="col-auto pr-4 pr-md-5 pl-4 pl-md-5 numb">
+                    <span class="display-1 min"></span>
+                    <p class="numbDetails">Minutes</p>
+                    </div>
+                    <div class="col-auto pl-3 pl-md-4 numb">
+                    <span class="display-1 sec"></span>
+                    <p class="numbDetails">Seconds</p>
+                    </div>
+                </div>
             </div>
             <div class="snow">
                 <div class="snow-zsemle-logo" />

@@ -20,20 +20,20 @@
     },
     "homepage": "https://github.com/MrZsemle/zsemle-counter#readme",
     "dependencies": {
-        "typeface-roboto": "0.0.75"
+        "typeface-roboto": "1.1.13"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.12.1",
-        "bootstrap": "^4.4.1",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.0",
-        "eslint-plugin-prettier": "^3.1.2",
-        "jquery": "^3.5.0",
+        "@fortawesome/fontawesome-free": "^5.15.1",
+        "bootstrap": "^4.5.3",
+        "eslint": "^7.16.0",
+        "eslint-config-prettier": "^7.1.0",
+        "eslint-plugin-prettier": "^3.3.0",
+        "jquery": "^3.5.1",
         "minimist": ">=1.2.5",
         "parcel-bundler": "^1.12.4",
         "popper.js": "^1.16.1",
-        "prettier": "^1.19.1",
-        "sass": "^1.26.3",
-        "twemoji": "^12.1.5"
+        "prettier": "^2.2.1",
+        "sass": "^1.30.0",
+        "twemoji": "^13.0.1"
     }
 }

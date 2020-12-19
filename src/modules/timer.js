@@ -20,25 +20,11 @@ export default argDate => {
             (distance % (1000 * 60)) / 1000
         ).toLocaleString(undefined, { minimumIntegerDigits: 2 });
 
-        //Edit HTML
-        app.innerHTML = `<div class="col-auto pr-2 pr-md-3 numb">
-                    <span class="display-1 font-weight-normal">${days}</span>
-                    <p class="numbDetails">Days</p>
-                    </div>
-                    <div class="col-auto pr-3 pr-md-4 pl-4 pl-md-5 numb">
-                    <span class="display-1">${hours}</span>
-                    <p class="numbDetails">Hours</p>
-                    </div>
-                    <div class="col-auto pr-4 pr-md-5 pl-4 pl-md-5 numb">
-                    <span class="display-1">${minutes}</span>
-                    <p class="numbDetails">Minutes</p>
-                    </div>
-                    <div class="col-auto pl-3 pl-md-4 numb">
-                    <span class="display-1">${seconds}</span>
-                    <p class="numbDetails">Seconds</p>
-                    </div>`;
-
-        //Verify
+        document.querySelector('.day').innerHTML = days;
+        document.querySelector('.hour').innerHTML = hours;
+        document.querySelector('.min').innerHTML = minutes;
+        document.querySelector('.sec').innerHTML = seconds;
+        
         if (0 > distance) {
             clearInterval(countdown);
             app.innerHTML = `<div class="col display-4 numb">uwu</div>`;
