@@ -22,8 +22,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:radial-gradient(50% 50% at 50% 50%,#ff9560 0,#ff6651 100%);
     //background: #292929;
+}
+
+@media (prefers-color-scheme: light) {
+    #app {
+        background:radial-gradient(50% 50% at 50% 50%,#ff9560 0,#ff6651 100%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #app {
+        background: #313131;
+    }
 }
 
 .snow {
