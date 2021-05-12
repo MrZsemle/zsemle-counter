@@ -12,9 +12,12 @@ export default argDate => {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toLocaleString(undefined, { minimumIntegerDigits: 2 });
         const seconds = Math.floor((distance % (1000 * 60)) / 1000).toLocaleString(undefined, { minimumIntegerDigits: 2 });
 
-        document.querySelector('.counter-row').style.visibility = 'visible';
+        const realDays = days - Math.round(days / 7) * 2 - 2;
+
+        document.querySelector('.counter-row').style.display = 'flex';
 
         document.querySelector('.day').innerHTML = days;
+        document.querySelector('.daysText').innerHTML = `<small>(${realDays})</small> Days`;
         document.querySelector('.hour').innerHTML = hours;
         document.querySelector('.min').innerHTML = minutes;
         document.querySelector('.sec').innerHTML = seconds;
